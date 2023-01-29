@@ -76,7 +76,7 @@ export default class Playground extends Component<Props> {
           }
         `}
         render={data => {
-          let logoUrl = data.avatar.childImageSharp.resolutions.src
+          let logoUrl = ''
           return (
             <Live
               scope={{ ...scope, logoUrl }}

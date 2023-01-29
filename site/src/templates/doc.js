@@ -135,9 +135,7 @@ export default class DocRoute extends React.Component<Props, DocRouteState> {
             <div>
               <MDXProvider
                 components={{
-                  'live-code': createLiveCode(
-                    avatar.childImageSharp.resolutions.src
-                  ),
+                  'live-code': createLiveCode(''),
                   ...markdownComponents
                 }}
               >
