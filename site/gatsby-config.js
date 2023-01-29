@@ -29,17 +29,13 @@ module.exports = {
         }
       },
       {
-        resolve: 'gatsby-source-filesystem',
-        options: {
-          path: `${__dirname}/../emotion.png`
-        }
+        resolve: 'gatsby-source-filesystem'
       },
       {
         // todo: contribute to gatsby-plugin-manifest
         // https://github.com/gatsbyjs/gatsby/issues/5887
         resolve: `gatsby-plugin-favicon-fork`,
         options: {
-          logo: `${__dirname}/../emotion.png`,
           injectHTML: true,
           icons: {
             android: false,
